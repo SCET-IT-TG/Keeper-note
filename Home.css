@@ -1,0 +1,34 @@
+/* Home.css */
+.home-page {
+    height: 100vh;
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./home.jpeg');
+    /* background-image: url('../src/home.jpeg'); */
+    background-size: cover;
+    z-index: -1; /* Ensure it's behind the content */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    padding: 20px; /* Add padding to create space from top and right edges */
+}
+
+.buttons {
+    display: flex;
+}
+
+/* Bootstrap button styling */
+.btn {
+    border-radius: 5px;
+}
